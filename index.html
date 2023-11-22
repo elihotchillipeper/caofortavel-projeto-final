@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Cãofortável</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="logo"><img src="logo.png" /></div>
-        <div class="menu"><nav>
-            <ul>
+    <header class="d-flex justify-content-around">
+        <div class="logo"><img src="logo.png" class="logo"/></div>
+        <div class="menu d-flex flex-row align-items-center"><nav>
+            <ul class="d-flex flex-row">
                 <li><a href="#">Home</a> </li>
                 <li><a href="#sobre" >Sobre</a></li>
                 <li><a href="#requisitos" >Requisitos</a></li>
@@ -18,25 +21,25 @@
                 <li><a href="#" >Contato</a></li>
             </ul>
         </nav></div>
-        <div class="social">
-            <ul>
+        <div class="social d-flex flex-row align-items-center">
+            <ul class="d-flex flex-row">
                 <li><a href="#" >FB</a></li>
                 <li><a href="#" >IG</a></li>
                 <li><a href="#" >YT</a></li>
             </ul>
         </div>
     </header>
-    <section class="banner">
-        <div class="conteudo">
+    <section class="banner flex-row d-flex align-items-center">
+        <div class="conteudo let-p let-2">
             <h2>Venha conhecer o Projeto Cãofortável</h2>
             <p>Descrição breve</p>
         </div>
     </section>
-    <section class="sobre" id="sobre">
+    <section class="sobre d-flex flex-row justify-content-start flex-wrap col py-4 px-5 mx-auto align-items-center" id="sobre">
         <div class="imagem">
-            <img src="dog-gif-sobre.gif" />
+            <img src="dog-gif-sobre.gif" class="col " />
         </div>
-        <div class="conteudo">
+        <div class="conteudo let-p let-2 mx-2 my-4 col-4 mx-4 px-4">
             <h2>O que é o Cãofortável?</h2>
             <p>
             &nbsp O projeto "Cãofortável" nasce da convicção de que todos os seres vivos merecem amor, cuidado e um lar. Nosso objetivo é resgatar animais em situação de risco, fornecer os cuidados necessários e prepará-los para serem adotados por lares amorosos e responosáveis. <br>&nbsp Nossa missão é dupla: primeiro, resgatar animais em condições precárias, muitas vezes vítimas de abandono, maus-tratos ou situações de perigo eminente. Em seguida, dedicamo-nos a oferecer cuidados veterinários, reabilitalção física e emocional, visando preparar esses animais para uma segunda chance por meio da adoção.
@@ -47,8 +50,8 @@
 
     <div class="espacamento"> &nbsp;</div>
 
-    <section class="requisitos" id="requisitos">
-        <div class="conteudo">
+    <section class="requisitos p-4" id="requisitos">
+        <div class="conteudo" mx-2 my-4 col-4>
             <h2>O que é necessário para uma adoção?</h2>
             <h3>Comprometimento:</h3>
             <p> &nbsp Adotar um pet é um compromisso de longo prazo. O pet pode viver por muitos anos; portanto, é preciso estar preparado para se dedicar e cuidar dele durante esse tempo. O projeto visa garantir que o dono mantenha o comprometimento com o animal, evitando outro abandono ou maus tratos, fazendo com que o animal e o dono tenham uma boa experiência juntos.</p>
@@ -61,10 +64,10 @@
         </div>
     </section>
     <footer>
-        <div class="espacamento"> &nbsp;</div>
-        <div class="footer-interno">
+        <div class="espacamento wid"> &nbsp;</div>
+        <div class="footer-interno d-flex flex-row justify-content-around">
             <div class="footer-coluna-1 footer-coluna">
-                <img src="logo.png" />
+                <img src="logo.png" class="logo"/>
                 <p>© 2022</p>
             </div>
             <div class="footer-coluna-2 footer-coluna">
