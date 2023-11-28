@@ -1,158 +1,212 @@
-/* console.log(prompt("Qual é o seu nome?"));
+/* //this is a js file
 
-const nome = "Eli";
-const idade = 16;
+let condicao1 = true;
+// "var" e "let" são a mesma coisa
+if (condicao1){
+    console.log('Entrei no if 1!');
+}
 
-console.log("Olá", "Meu nome é", nome, "e eu tenho", idade, "anos");
+let condicao2 = false;
 
-//Numbers: são os tipos que representam números
+if (condicao2){
+    console.log('Entrei no if condicao2!')
+}
 
-//const idade = 23;
-const altura = 1.79;
-const temperatura = -20;
 
-//Strings: são os tipos que representam conjunto de carcteres (texto)
 
-const nome = "Yuzo";
-const idade = "23";
-
-var souUmBoolean = true;
-console.log(souUmBoolean);
-souUmBoolean = false;
-console.log(souUmBoolean);
  */
 
-/* var nome = "Eli";
-var sobrenome = "Escobar";
-var idade = 16;
-var estudante = true;
 
-console.log("Nome:", nome, "Sobrenome:", sobrenome, "Idade:", idade, "É estudante?", estudante);
+/* var num1 = 1;
+var num2 = 0;
 
-console.log(" Nome: " + nome + " sobrenome: " + sobrenome + " idade: " + idade + " É estudante? " + estudante);
+if (num1 === num2){
+    console.log("São iguais!")
+}else{
+    if(num1 > num2){
+        console.log("São diferentes e num1 maior!");
+    }else{
+        console.log("São diferentes e num2 é maior!");
+    }
 
-var todoTexto = " Nome: " + nome + " sobrenome: " + sobrenome + " idade: " + idade + " É estudante? " + estudante;
+} */
 
-console.log(todoTexto)
 
-console.log((nome));
-console.log(typeof(sobrenome));
-console.log(typeof(idade));
-console.log(typeof(estudante)); */
 
-/* const idadeNumero = 23;
-const idadeTexto = idadeNumero.toString();
-
-console.log(typeof idadeNumero)
-console.log(typeof idadeTexto) */
-
-/* var n1 = 10;
-var n2 = 5;
-var n3 = 3
-
-var soma, subtracao, multiplicacao, divisao;
-
-soma = n1 + n2; //15
-subtracao = n1 - n2; //5
-divisao = n1 / n2; //2
-multiplicacao = n1 * n2; //50
-
-console.log(soma);
-console.log(subtracao);
-console.log(divisao);
-console.log(multiplicacao);
+/* var paisDeOrigem = "brasil";
+ 
+switch (paisDeOrigem) {
+    case "brasil":
+        console.log("brasileiro")
+        break;
+    case "EUA":
+        console.log("americano")
+        break;
+    case "japão":
+            console.log("japones")
+        break;
+    default:
+        console.log("Sem resposta")
+        break;
+}
  */
 
-/* var numero = 7;
+/* var pokemonInicial = "Charmander"
 
-console.log(numero % 2);
+switch (pokemonInicial) {
+    case "Charmander":
+        console.log("Pokemon tipo fogo!")
+        break;
+    case "Bulbassauro":
+        console.log("Pokemon tipo planta e veneno!")
+        break;
+    case "Squirtle":
+        console.log("Pokemon tipo água!")
+         break;
+    default:
+        console.log("Pokemon Desconhecido")
+        break;
+}
  */
 
-/* var n1 = 2;
-var n2 = 3565;
-var n3 = 2;
-var n4 = 3;
+/*var lista = [1,2,3,4,5,6,7,8,9,10];
 
-/* console.log(n1 === n2);
-console.log(n1 === n3);
+lista.forEach(element => {
+    console.log(element)
+});
 
-console.log(n1 !== n2);
-console.log(n1 !== n3);
+
+for (const element of lista) {
+    console.log(element)
+}
+
+
+
+for (let index = 0; index < lista.length; index++) {
+    const element = lista[index];
+    console.log(element)   
+}
  */
-/* console.log(n1 > n3);
-console.log(n1 >= n3); */
+
+/* var i = 0;
+while(i < 10){
+    console.log(i);
+    i = i =1;
+} */
+
+
+
+/* function calcularArea(altura = 10, largura = 20) {
+    var area = altura * largura;
+    return (area);
+}
+
+function somaArea(largura1, largura2, altura1, altura2) {
+    var area1 = calcularArea(altura1, largura1);
+    var area2 = calcularArea(altura2, largura2);
+    return(area1 + area2);
+}
+
+console.log(somaArea(10,20,30,40)); */
+
+/* function imprimeNomes(nome) {
+    console.log(nome);
+}
+imprimeNomes("nome1");
+imprimeNomes("nome2");
+imprimeNomes("nome3");
+
+function imprimeNomesComReturn(nome){
+    return nome
+}
+console.log(imprimeNomes("nome1"));
+console.log(imprimeNomes("nome2"));
+console.log(imprimeNomes("nome3"));
+ */
+
+
 /* 
-console.log(n1 === n2 && n1 === n3); apenas v e v geram true, se uma das operações for falsas toda a operação será falsa
-console.log(n1 === n2 || n1 === n3); */
 
+function recebeArray(lista = []){
+    var arrayFinal = [];
+    arrayFinal[0] = lista[lista.length -1];
+    arrayFinal[1] = lista[0];
+    console.log(arrayFinal);
+}
+var lista = [1,2,3,4,5,6,7,8,9];
+ recebeArray(lista);
 
-/* 
-var a = true;
-var b = false;
-var c = true;
-
-/* console.log(a && b);
-console.log(b && c);
-console.log(a && c);
-console.log(a && b && c);
-
-console.log(a || b);
-console.log(b || c);
-console.log(a || c);
-console.log(a || b || c);
-
-console.log(!a);
  */
 
-/* 
-var nome = "elJKIWRBFGWEi";
-var outronome = "fisuefguigeff "
-var idade = 16;
-const frase = "Cade a porra do meu café Zuleica?"
-var anoAtual = 2023;
 
-console.log("Nome: " + nome);
-console.log("Idade: " + idade);
-console.log("É maior de idade? " + (idade >=18));
-console.log("Idade em 2050: " + (idade + (2050 - anoAtual)));
+ //Declaração de variáveis
+const header = document.createElement("header");
+const content = document.createElement("main");
+const footer = document.createElement("footer");
 
-console.log("Nome: " + nome, " Idade: " + idade, " É maior de idade? " + (idade >=18), " Idade em 2050: " + (idade + (2050 - anoAtual)));
+//Adiciona conteúdo ao cabeçalho
+header.innerHTML = `
+    <h1>Cabeçalho</h1>
+    <p>Este é o cabeçalho da página.</p>
+`;
+
+//Adiciona conteúdo ao conteúdo
+content.innerHTML = `
+    <h2>Conteúdo</h2>
+    <p>Este é o conteúdo da página.</p>
+`;
+
+//Adiciona conteúdo ao rodapé
+footer.innerHTML = `
+    <p>Rodapé.</p>
+`;
+
+//Adiciona os elementos á página
+document.body.appendChild(header);
+document.body.appendChild(content);
+document.body.appendChild(footer);
+
+header.style.backgroundColor = "#ccc";
+header.style.padding = "10px";
+
+content.style.backgroundColor = "#fff";
+content.style.padding = "20px";
+
+footer.style.backgroundColor = "#ccc";
+footer.style.padding = "10px"
+
+const container = document.querySelector("main");
+const linhas = [];
+const cores = ["#fff", "#ccc"];
+
+for (let i = 0; i < 10; i++) {
+    const linha = document.createElement("div");
+    linha.classList.add("linha");
+    linha.innerHTML = `
+    <h3>Linha ${i + 1}</h3>
+    <p>Este é o conteúdo da linha ${i + 1}.</p>
+    `;
+    container.appendChild(linha);
+
+    linhas.push(linha);
+}
+
+//alterna as cores das linhas
+function alternarCores(){
+    for (let i = 0; i < linhas.length; i++){
+        linhas[i].style.backgroundColor = cores[i % 2];
+    }
+}
+alternarCores();
 
 
-console.log(nome.length);
-
-console.log(nome.toLowerCase());
-console.log(nome.toUpperCase());
-
-console.log(outronome.trim());
-
-console.log(frase.includes("café")); //true
-console.log(frase.includes("cenoura")); //false 
-
-const frase = "Cade a porra do meu café Zuleica?";
-const novaFrase = frase.replaceAll("café", "almoço");
-console.log(novaFrase);
-*/
 
 
-const listaDeCompras = ["batata", "alface", "queijo"]
 
-const listaDeNumerosMega = [2, 13, 26, 35, 41, 60]
-listaDeCompras.push("cenoura");
-listaDeCompras[4] = "papel";
-listaDeCompras[listaDeCompras.length] = "cebola";
-listaDeCompras[1] = "tomate";
-console.log(listaDeCompras)
-//listaDeCompras.pop();
 
-listaDeCompras.splice(3, 2);
 
-console.log(listaDeCompras);
-console.log(listaDeCompras[0]);
-console.log(listaDeCompras[1]);
-console.log(listaDeCompras[2]);
 
-console.log(listaDeCompras.length);
+
 
 
 
