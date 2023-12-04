@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Cãofortável</title>
+    <title>Formulários cães</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
 
@@ -30,24 +30,22 @@
             </ul>
         </div>
     </header>
-    <section class="text-center d-flex flex-column justify-content-center">
-        <div class="espacamento-form"> &nbsp;</div>
-        <form class="form-signin">
-          <h1 class="h3 mb-3 font-weight-normal">Faça login</h1>
-          <label for="inputEmail" class="sr-only">Endereço de email</label>
-          <input type="email" id="inputEmail" class="form-control" placeholder="Seu email" required="" autofocus="">
-          <label for="inputPassword" class="sr-only">Senha</label>
-          <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required="">
-          <div class="checkbox mb-3">
-            <label>
-              <input type="checkbox" value="remember-me"> Lembre-me
-            </label>
-          </div>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-          <p class="mt-5 mb-3 text-muted">© 2023</p>
+
+    <section class="formulario">
+        <p>Preencha o formulário abaixo para adicionar um novo cão ao site.</p>
+        <form action="" id="form">
+            <input type="text" placeholder="Nome do pet" name="nome" id="nome" />
+            <input type="text" placeholder="Descrição do animal" name="descrição" id="descrição" />
+            <input type="text" placeholder="Raça" />
+            <input type="text" placeholder="Idade" />
+            <select>
+                <option>Fêmea</option>
+                <option>Macho</option>
+            </select>
+            <input type="submit" value="Enviar" id="enviar" />
         </form>
-        
     </section>
+
     <footer>
         <div class="espacamento"> &nbsp;</div>
         <div class="footer-interno d-flex flex-row justify-content-around">
