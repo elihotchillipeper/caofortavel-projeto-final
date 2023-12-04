@@ -266,6 +266,46 @@ section.opcao div.pet-image img{
     width: 100%;
 }
 
+section.formulario form#form input {
+    width: 100%;
+    padding: 6px;
+    margin: 6px auto;
+}
+
+section.formulario form#form {
+    width: 45vw;
+    margin: 1rem auto;
+}
+
+section.formulario form#form input[type="submit"] {
+    width: 180px;
+    margin: 6px auto 6px 0px;
+}
+
+section.formulario h3, section.formulario p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
