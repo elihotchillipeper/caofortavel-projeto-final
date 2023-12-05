@@ -236,7 +236,9 @@ footer .footer-interno .footer-coluna ul li{
     list-style: none;
     text-align: center;
 }
-
+footer{
+    border-top: 1px solid #36363636;
+}
 section.opcao{
     width: 80%;
 
@@ -246,7 +248,6 @@ section.opcao{
 }
 
 section.opcao div.banner-pequeno{
-    width: 30%;
     margin: 0px 0px 0px 32px;
     padding: 42px;
     border: 1px solid #d8d8d8;
@@ -265,6 +266,46 @@ section.opcao div.banner-pequeno p{
 section.opcao div.pet-image img{
     width: 100%;
 }
+
+section.formulario form#form input {
+    width: 100%;
+    padding: 6px;
+    margin: 6px auto;
+}
+
+section.formulario form#form {
+    width: 45vw;
+    margin: 1rem auto;
+}
+
+section.formulario form#form input[type="submit"] {
+    width: 180px;
+    margin: 6px auto 6px 0px;
+}
+
+section.formulario h3, section.formulario p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
