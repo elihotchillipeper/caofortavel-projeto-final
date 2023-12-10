@@ -97,6 +97,9 @@ section.opcao{
 }
 
 section.opcao div.banner-pequeno{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     margin: 0px 0px 0px 32px;
     padding: 42px;
     border: 1px solid #d8d8d8;
