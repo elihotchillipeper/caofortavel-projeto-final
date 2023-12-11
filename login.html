@@ -33,11 +33,15 @@
 
     <section class="formulario">
         <p>Entre na sua conta.</p>
-        <form action="" id="form">
-            <input type="text" placeholder="Seu nome" name="nome" id="nome" />
-            <input type="password" placeholder="Senha" />
-            <input type="submit" value="Entrar" id="enviar" />
+        <form id="loginForm">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" required><br>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" required><br>
+            <button type="button" onclick="login()">Login</button>
         </form>
+    
+        <script src="script.js"></script>
     </section>
 
     <footer>
@@ -82,7 +86,22 @@
             </div>
         </div>
     </footer>
-</body>
-</html>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

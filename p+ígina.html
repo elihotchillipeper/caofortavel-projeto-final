@@ -14,3 +14,135 @@
     
 </body>
 </html>
+
+
+<script>
+    var tituloBanner = document.querySelector("main section.opcao div.banner-pequeno h3");
+    var tituloBanner = document.querySelector("main section.opcao div.banner-pequeno p");
+    var tituloBanner = document.querySelector("main section.opcao div.banner-pequeno button");
+    var tituloBanner = document.querySelector("main section.opcao div.pet-image img");
+</script>
+
+<script>
+
+        var caesAdote = [
+     {
+        imagem: "pet-img.png",
+        titulo: "Nome 1",
+        desc: "cachorro1 cachorro1 cachorro1 cachorro1 cachorro1",
+        genero: "fêmea",
+        categoria: "cachorro",
+      },
+     {
+        imagem: "pet-img.png",
+        titulo: "Nome 2",
+        desc: "cachorro2 cachorro2 cachorro2 cachorro2 cachorro2",
+        genero: "macho",
+        categoria: "cachorro",
+      },
+      {
+        imagem: "pet-img.png",
+        titulo: "Nome 3",
+        desc: "cachorro3 cachorro3 cachorro3 cachorro3 cachorro3",
+        genero: "macho",
+        categoria: "gato",
+     },
+     {
+        imagem: "pet-img.png",
+        titulo: "Nome 4",
+        desc: "cachorro4 cachorro4 cachorro4 cachorro4 cachorro4",
+        genero: "fêmea",
+        categoria: "gato",
+      },
+     {
+        imagem: "pet-img.png",
+        titulo: "Nome 5",
+        desc: "cachorro5 cachorro5 cachorro5 cachorro5 cachorro5",
+        genero: "fêmea",
+        categoria: "gato",
+     },
+        {
+        imagem: "pet-img.png",
+        titulo: "Nome 6",
+        desc: "cachorro6 cachorro6 cachorro6 cachorro6 cachorro6",
+        genero: "fêmea",
+        categoria: "gato",
+        },
+        ];
+        function pesquisar() {
+          var pesquisa = document.getElementById("pesquisa").value;
+        
+          var caesFiltrados = caesAdote.filter(pet => {
+            return pet.titulo.toLowerCase().includes(pesquisa.toLowerCase()) ||
+              pet.desc.toString().toLowerCase().includes(pesquisa.toLowerCase()) ||
+              pet.genero.toLowerCase().includes(pesquisa.toLowerCase());
+              pet.categoria.toLowerCase().includes(pesquisa.toLowerCase());
+              
+          });
+          if (!pesquisa) {
+            caesFiltrados = caes;
+          }
+          var html = "";
+          caesFiltrados.forEach(pet => {
+            html += `
+              <div>
+                <img src="${pet.imagem}">
+                <p>${pet.titulo}</p>
+                <p>${pet.desc}</p>
+                <p>${pet.genero}</p>
+                <p>R$ ${pet.categoria}</p>
+              </div>
+            `;
+          });
+        
+          document.getElementById("caes").innerHTML = html;
+            }
+        
+         document.getElementById("pesquisa").addEventListener("input", pesquisar);
+        
+         pesquisar();
+        
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -30,90 +30,15 @@
                 </ul>
             </div>
         </header>
-        <section class="pesquisa col">
             <div class="espacamento"> &nbsp;</div>
-            <div class="barra-p col-6 align-items-center mx-auto my-4">
-                <input type="search" class="form-control rounded" placeholder="Pesquisar" aria-label="Search" aria-describedby="search-addon" />
-            </div>
 
-            
-            <div class="col-6 mx-auto my-4 d-flex flex-row justify-content-end">
-                <input type="search" id="pesquisa" oninput="limpar()"> 
-            <button type="button" onclick="filtrar()">Filtrar</button>
-            </div>
-        </section>
+            <div class="container col-6 align-items-center mx-auto my-4">
+                <input type="text" id="pesquisa" placeholder="Pesquisar">
+              </div>
+              
 
-        <section class="opcao d-flex flex-row justify-content-center flex-wrap gap-4">
-            <div class="single-adote d-flex col col-md-4 flex-row flex-nowrap gap-0">
-                <div class="banner-pequeno">
-                    <h3>Nome</h3>
-                    <p class="d-flex flex-wrap">Descrição</p>
-                    <p>Fêmea</p>
-                    <a href="formulario-cadastro.html"><button>Tenho interesse</button></a>
-                </div>
-                <div class="pet-image d-flex flex-row">
-                    <img src="pet-img.png" />
-                </div>
-            </div>
 
-            <div class="single-adote d-flex col col-md-4 flex-row flex-nowrap gap-0">
-                <div class="banner-pequeno">
-                    <h3>Nome</h3>
-                    <p>Descrição</p>
-                    <p>Fêmea</p>
-                    <a href="formulario-cadastro.html"><button>Tenho interesse</button></a>
-                </div>
-                <div class="pet-image d-flex flex-row">
-                    <img src="pet-img.png" />
-                </div>
-            </div>
-
-            <div class="single-adote d-flex col col-md-4 flex-row flex-nowrap gap-0">
-                <div class="banner-pequeno">
-                    <h3>Nome</h3>
-                    <p>Descrição</p>
-                    <p>Fêmea</p>
-                    <a href="formulario-cadastro.html"><button>Tenho interesse</button></a>
-                </div>
-                <div class="pet-image d-flex flex-row">
-                    <img src="pet-img.png" />
-                </div>
-            </div>
-
-            <div class="single-adote d-flex col col-md-4 flex-row flex-nowrap gap-0">
-                <div class="banner-pequeno">
-                    <h3>Nome</h3>
-                    <p>Descrição</p>
-                    <p>Macho</p>
-                    <a href="formulario-cadastro.html"><button>Tenho interesse</button></a>
-                </div>
-                <div class="pet-image d-flex flex-row">
-                    <img src="pet-img.png" />
-                </div>
-            </div>
-
-            <div class="single-adote d-flex col col-md-4 flex-row flex-nowrap gap-0">
-                <div class="banner-pequeno">
-                    <h3>Nome</h3>
-                    <p>Descrição</p>
-                    <p>Fêmea</p>
-                    <a href="formulario-cadastro.html"><button>Tenho interesse</button></a>
-                </div>
-                <div class="pet-image d-flex flex-row">
-                    <img src="pet-img.png" />
-                </div>
-            </div>
-
-            <div class="single-adote d-flex col col-md-4 flex-row flex-nowrap gap-0">
-                <div class="banner-pequeno">
-                    <h3>Nome</h3>
-                    <p>Descrição</p>
-                    <p>Fêmea</p>
-                    <a href="formulario-cadastro.html"><button>Tenho interesse</button></a>
-                </div>
-                <div class="pet-image d-flex flex-row">
-                    <img src="pet-img.png" />
-                </div>
+        <section id="caesAdote" class="opcao d-flex flex-row justify-content-center flex-wrap gap-4">
         </section>
         
         <footer>
@@ -160,16 +85,89 @@
     </main>
 
     <script>
-        var tituloBanner = document.querySelector("main section.opcao div.banner-pequeno h3");
-        var tituloBanner = document.querySelector("main section.opcao div.banner-pequeno p");
-        var tituloBanner = document.querySelector("main section.opcao div.banner-pequeno button");
-        var tituloBanner = document.querySelector("main section.opcao div.pet-image img");
+
+        var caesAdote = [
+            {
+                imagem: "pet-img.png",
+                titulo: "Nome 1",
+                desc: "cachorro1 cachorro1 cachorro1 cachorro1 cachorro1",
+                genero: "fêmea",
+                categoria: "cachorro",
+            },
+            {
+                imagem: "pet-img.png",
+                titulo: "Nome 2",
+                desc: "cachorro2 cachorro2 cachorro2 cachorro2 cachorro2",
+                genero: "macho",
+                categoria: "cachorro",
+            },
+            {
+                imagem: "pet-img.png",
+                titulo: "Nome 3",
+                desc: "cachorro3 cachorro3 cachorro3 cachorro3 cachorro3",
+                genero: "macho",
+                categoria: "cachorro",
+            },
+            {
+                imagem: "pet-img.png",
+                titulo: "Nome 4",
+                desc: "cachorro4 cachorro4 cachorro4 cachorro4 cachorro4",
+                genero: "fêmea",
+                categoria: "cachorro",
+            },
+            {
+                imagem: "pet-img.png",
+                titulo: "Nome 5",
+                desc: "cachorro5 cachorro5 cachorro5 cachorro5 cachorro5",
+                genero: "fêmea",
+                categoria: "cachorro",
+            },
+            {
+                imagem: "pet-img.png",
+                titulo: "Nome 6",
+                desc: "cachorro6 cachorro6 cachorro6 cachorro6 cachorro6",
+                genero: "fêmea",
+                categoria: "cachorro",
+            },
+        ];
+
+
+
+        function pesquisar() {
+        var pesquisa = document.getElementById("pesquisa").value;
+
+        var caesFiltrados = caesAdote.filter(pet => {
+            return pet.titulo.toLowerCase().includes(pesquisa.toLowerCase()) ||
+            pet.desc.toString().toLowerCase().includes(pesquisa.toLowerCase()) ||
+            pet.genero.toString().toLowerCase().includes(pesquisa.toLowerCase()) ||
+            pet.categoria.toLowerCase().includes(pesquisa.toLowerCase());
+        });
+        if (!pesquisa) {
+            caesFiltrados = caesAdote;
+        }
+        var html = "";
+        caesFiltrados.forEach(pet => {
+            html += `<div class="single-adote d-flex col col-md-4 flex-row flex-nowrap gap-0">
+                <div class="banner-pequeno">
+                    <h3>${pet.titulo}</h3>
+                    <p>${pet.desc}</p>
+                    <p>${pet.genero}</p>
+                    <a href="formulario-cadastro.html"><button>Tenho interesse</button></a>
+                </div>
+                <div class="pet-image d-flex flex-row">
+                    <img src="${pet.imagem}" />
+                </div>
+            </div>`;
+        });
+
+        document.getElementById("caesAdote").innerHTML = html;
+        }
+
+        document.getElementById("pesquisa").addEventListener("input", pesquisar);
+
+        pesquisar();
+
     </script>
-
-
-
-
-
 
 
 

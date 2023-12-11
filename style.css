@@ -115,10 +115,6 @@ section.opcao div.banner-pequeno p{
     font-size: 16px;
 }
 
-section.opcao div.pet-image img{
-    width: 100%;
-}
-
 section.formulario form#form input , section.formulario div.login input {
     width: 100%;
     padding: 6px;
