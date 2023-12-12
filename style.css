@@ -115,28 +115,29 @@ section.opcao div.banner-pequeno p{
     font-size: 16px;
 }
 
-section.formulario form#form input , section.formulario div.login input {
+section.formulario form#form input , section.formulario div.login input, section.formulario div.entrar input {
     width: 100%;
     padding: 6px;
     margin: 6px auto;
 }
 
-section.formulario form#form , section.formulario div.login {
+section.formulario form#form , section.formulario div.login, section.formulario div.entrar {
     width: 45vw;
     margin: 1rem auto;
-    text-align: center
+    text-align: center;
+    margin-bottom: 64px;
 }
 
-section.formulario form#form input[type="submit"] , section.formulario div.login input[type="submit"] {
+section.formulario form#form input[type="submit"] , section.formulario div.login input[type="submit"], section.formulario div.entrar button {
     width: 180px;
     margin: 6px auto 6px 0px;
 }
 
-section.formulario h3, section.formulario p {
+section.formulario h3, section.formulario p, section.formulario div.entrar input {
     text-align: center;
 }
 
-section.formulario form#form button {
+section.formulario form#form button, section.formulario div.entrar input {
     width: 180px;
     margin: 6px auto 6px 0px;
 }

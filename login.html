@@ -11,81 +11,83 @@
     <script src="old_index.js.js" defer></script>
 </head>
 <body>
-    <header class="d-flex justify-content-around p-4">
-        <div class="logo"><img src="logo-site.png" class="logo"/></div>
-        <div class="menu d-flex flex-row align-items-center"><nav>
-            <ul class="d-flex flex-row">
-                <li><a href="index.html">Home</a> </li>
-                <li><a href="#sobre" >Sobre</a></li>
-                <li><a href="#requisitos" >Requisitos</a></li>
-                <li><a href="escolha.html" >Adote</a></li>
-                <li><a href="#info" >Info</a></li>
-            </ul>
-        </nav></div>
-        <div class="social d-flex flex-row align-items-center col-2 clearfix align-itens-center">
-            <ul class="d-flex flex-row align-items-center" >
-                <li><a href="#" ><img class="col-4" src="fb-logo.png"></a></li>
-                <li><a href="#" ><img class="col-4" src="ig-logo.png"></a></li>
-                <li><a href="#" ><img class="col-4" src="yt-logo.png"></a></li>
-            </ul>
-        </div>
-    </header>
+        <header class="d-flex justify-content-around p-4">
+            <div class="logo"><img src="logo-site.png" class="logo"/></div>
+            <div class="menu d-flex flex-row align-items-center"><nav>
+                <ul class="d-flex flex-row">
+                    <li><a href="index.html">Home</a> </li>
+                    <li><a href="#sobre" >Sobre</a></li>
+                    <li><a href="#requisitos" >Requisitos</a></li>
+                    <li><a href="escolha.html" >Adote</a></li>
+                    <li><a href="#info" >Info</a></li>
+                </ul>
+            </nav></div>
+            <div class="social d-flex flex-row align-items-center col-2 clearfix align-itens-center">
+                <ul class="d-flex flex-row align-items-center" >
+                    <li><a href="#" ><img class="col-4" src="fb-logo.png"></a></li>
+                    <li><a href="#" ><img class="col-4" src="ig-logo.png"></a></li>
+                    <li><a href="#" ><img class="col-4" src="yt-logo.png"></a></li>
+                </ul>
+            </div>
+        </header>
 
-    <section class="formulario">
-        <p>Entre na sua conta.</p>
-        <form id="loginForm">
-            <label for="username">Usuário:</label>
-            <input type="text" id="username" required><br>
-            <label for="password">Senha:</label>
-            <input type="password" id="password" required><br>
-            <button type="button" onclick="login()">Login</button>
-        </form>
-    
-        <script src="script.js"></script>
-    </section>
+        <section class="formulario">
+            <div class="entrar">
+                <p>Entre na sua conta.</p>
+                <form id="loginForm">
+                    <input type="text" id="username" placeholder="Username" required><br>
+                    <input type="password" id="password" placeholder="Senha" required><br>
+                    <button type="button" onclick="login()">Login</button>
+                </form>
+            
+                <script src="script.js"></script>
+            </div>
+        </section>
 
-    <footer>
-        <div class="espacamento"> &nbsp;</div>
-        <div class="footer-interno d-flex flex-row justify-content-around">
-            <div class="footer-coluna-1 footer-coluna">
-                <img src="logo-site.png" class="logo"/>
-                <p>© 2023</p>
+        <footer>
+            <div class="espacamento"> &nbsp;</div>
+            <div class="footer-interno d-flex flex-row justify-content-around">
+                <div class="footer-coluna-1 footer-coluna">
+                    <img src="logo-site.png" class="logo"/>
+                    <p>© 2023</p>
+                </div>
+                <div class="footer-coluna-2 footer-coluna" id="info">
+                    <ul>
+                        <li class="titulo p-2">Redes</li>
+                        <li>IG @caofortavel_ofc</li>
+                        <li>&nbsp;</li>
+                        <li>FB @caofortavel</li>
+                        <li>&nbsp;</li>
+                        <li>X @caofortavelofc</li>
+                        <li>&nbsp;</li>
+                    </ul>
+                </div>
+                <div class="footer-coluna-3 footer-coluna">
+                    <ul>
+                        <li class="titulo p-2">Ajuda</li>
+                        <li>Colaboradores</li>
+                        <li>&nbsp;</li>
+                        <li>FAQ</li>
+                        <li>&nbsp;</li>
+                        <li>Help</li>
+                        <li>&nbsp;</li>
+                    </ul>
+                </div>
+                <div class="footer-coluna-4 footer-coluna">
+                    <ul>
+                        <li class="titulo p-2">Contatos</li>
+                        <li>Rua Bento Gonçalves, 1537, Centro, NH, RS</li>
+                        <li>&nbsp;</li>
+                        <li>email@exeplo.com</li>
+                        <li>&nbsp;</li>
+                        <li>+ 01 234 567 88</li>
+                        <li>&nbsp;</li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-coluna-2 footer-coluna" id="info">
-                <ul>
-                    <li class="titulo p-2">Redes</li>
-                    <li>IG @caofortavel_ofc</li>
-                    <li>&nbsp;</li>
-                    <li>FB @caofortavel</li>
-                    <li>&nbsp;</li>
-                    <li>X @caofortavelofc</li>
-                    <li>&nbsp;</li>
-                </ul>
-            </div>
-            <div class="footer-coluna-3 footer-coluna">
-                <ul>
-                    <li class="titulo p-2">Ajuda</li>
-                    <li>Colaboradores</li>
-                    <li>&nbsp;</li>
-                    <li>FAQ</li>
-                    <li>&nbsp;</li>
-                    <li>Help</li>
-                    <li>&nbsp;</li>
-                </ul>
-            </div>
-            <div class="footer-coluna-4 footer-coluna">
-                <ul>
-                    <li class="titulo p-2">Contatos</li>
-                    <li>Rua Bento Gonçalves, 1537, Centro, NH, RS</li>
-                    <li>&nbsp;</li>
-                    <li>email@exeplo.com</li>
-                    <li>&nbsp;</li>
-                    <li>+ 01 234 567 88</li>
-                    <li>&nbsp;</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+        </footer>
+        
+
     </body>
 </html>
 
